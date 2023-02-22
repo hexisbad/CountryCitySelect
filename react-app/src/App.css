@@ -1,3 +1,7 @@
+body {
+  background-color: #e0e0e0;
+}
+
 .App {
   text-align: center;
 }
@@ -7,43 +11,51 @@
   margin: 0 auto;
 }
 
-.App {
-  text-align: center;
-}
-
 .App-header {
-  background-color: #282c34;
+  text-transform: uppercase;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 22px;
+  color: #333;
 }
 
 .user-container {
   display: flex;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding: 100px 0px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 60%;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.user-container > select {
+  padding: 8px 0px;
+  border: 1px solid #e0e0e0;
+  width: 65%;
+  background-color: #e0e0e0;
+  border-bottom: 1px solid #282c34;
+  outline: none; 
+}
+
+.user-container > select:last-of-type {
+  margin-bottom: 30px;
 }
 
 .info-item {
-  margin: 12px;
-  border: 2px solid rgb(159, 12, 22);
   align-self: center;
-  background-color: #63b7af;
   border-radius: 2em;
 }
 
-
-
-
-
 .button-52 {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 900;
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   margin: 12px;
@@ -55,18 +67,18 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border-radius: 10px;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:  #574b90;
+  box-shadow: 8px 8px  #574b90;
+  transition: box-shadow 0.3s;
 }
 
-.button-52:after {
-  content: "";
-  background-color: #ffe54c;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
+.button-52:hover {
+  box-shadow: 1px 1px  #574b90;
+
 }
 
 .button-52:hover:after {
